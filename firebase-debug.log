@@ -1,0 +1,47 @@
+[debug] [2024-04-24T17:37:04.036Z] ----------------------------------------------------------------------
+[debug] [2024-04-24T17:37:04.039Z] Command:       C:\Program Files\nodejs\node.exe D:\frontend work\Demo1\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-04-24T17:37:04.040Z] CLI Version:   13.7.4
+[debug] [2024-04-24T17:37:04.040Z] Platform:      win32
+[debug] [2024-04-24T17:37:04.040Z] Node Version:  v20.11.1
+[debug] [2024-04-24T17:37:04.040Z] Time:          Thu Apr 25 2024 00:37:04 GMT+0700 (เวลาอินโดจีน)
+[debug] [2024-04-24T17:37:04.040Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-24T17:37:04.162Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-24T17:37:04.163Z] > authorizing via signed-in user (pangpang47096@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-04-24T17:37:04.175Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-24T17:37:04.175Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-24T17:37:04.176Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":9999}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project cicd1-fa748. This may result in unexpected behavior. 
+[debug] [2024-04-24T17:37:04.183Z] [hub] writing locator at C:\Users\ASUS\AppData\Local\Temp\hub-cicd1-fa748.json
+[debug] [2024-04-24T17:37:04.204Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cicd1-fa748/sites 
+[debug] [2024-04-24T17:37:04.993Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cicd1-fa748/sites 200
+[debug] [2024-04-24T17:37:04.994Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cicd1-fa748/sites {"sites":[{"name":"projects/cicd1-fa748/sites/cicd1-fa748","defaultUrl":"https://cicd1-fa748.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-24T17:37:04.994Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cicd1-fa748/webApps/-/config [none]
+[debug] [2024-04-24T17:37:05.774Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cicd1-fa748/webApps/-/config 200
+[debug] [2024-04-24T17:37:05.774Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cicd1-fa748/webApps/-/config {"projectId":"cicd1-fa748","storageBucket":"cicd1-fa748.appspot.com","apiKey":"AIzaSyDMKvSEaXzjdgXZl2o-Kv5BzAMe1EFldGY","authDomain":"cicd1-fa748.firebaseapp.com","messagingSenderId":"765446382557"}
+[debug] [2024-04-24T17:37:05.799Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cicd1-fa748 [none]
+[debug] [2024-04-24T17:37:06.231Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cicd1-fa748 200
+[debug] [2024-04-24T17:37:06.231Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cicd1-fa748 {"projectId":"cicd1-fa748","projectNumber":"765446382557","displayName":"CICD1","name":"projects/cicd1-fa748","resources":{"hostingSite":"cicd1-fa748"},"state":"ACTIVE","etag":"1_b2793c05-49d5-4385-9cb7-91e538888d11"}
+[info] i  hosting[cicd1-fa748]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[cicd1-fa748]: Local server: http://127.0.0.1:9999 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:9999\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:9999 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [24/Apr/2024:17:37:09 +0000] "GET / HTTP/1.1" 200 385 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Apr/2024:17:37:09 +0000] \"GET / HTTP/1.1\" 200 385 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Apr/2024:17:37:09 +0000] "GET /bundle.js HTTP/1.1" 200 - "http://127.0.0.1:9999/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Apr/2024:17:37:09 +0000] \"GET /bundle.js HTTP/1.1\" 200 - \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Apr/2024:17:37:09 +0000] "GET /pug.jpg HTTP/1.1" 200 770433 "http://127.0.0.1:9999/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Apr/2024:17:37:09 +0000] \"GET /pug.jpg HTTP/1.1\" 200 770433 \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Apr/2024:17:37:09 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:9999/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Apr/2024:17:37:09 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\""}}
